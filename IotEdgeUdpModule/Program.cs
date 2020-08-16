@@ -70,7 +70,7 @@ namespace IotEdgeUdpModule
             Thread thdUDPServer = new Thread(new ThreadStart(UDPServer));
             thdUDPServer.Start();
 
-            Console.WriteLine("Started2");
+            Console.WriteLine("StartedNew");
         }
 
         /// <summary>
