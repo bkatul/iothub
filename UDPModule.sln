@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{34036844-64E7-43A5-9151-4AD90E180989}") = "UDPModule", "UDPModule\UDPModule.iotedgeproj", "{AFCDF584-C391-4E0C-BE4C-8AE129AD3889}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IotEdgeUdpModule", "IotEdgeUdpModule\IotEdgeUdpModule.csproj", "{F1899D10-E071-4F6D-B3B5-ECC331B4C806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFCDF584-C391-4E0C-BE4C-8AE129AD3889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCDF584-C391-4E0C-BE4C-8AE129AD3889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCDF584-C391-4E0C-BE4C-8AE129AD3889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCDF584-C391-4E0C-BE4C-8AE129AD3889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1899D10-E071-4F6D-B3B5-ECC331B4C806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1899D10-E071-4F6D-B3B5-ECC331B4C806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1899D10-E071-4F6D-B3B5-ECC331B4C806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1899D10-E071-4F6D-B3B5-ECC331B4C806}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7940ABAA-6C5E-4518-A94E-D7EEECFF62B8}
+	EndGlobalSection
+EndGlobal
