@@ -112,12 +112,14 @@ namespace IotEdgeUdpModule
                     /*
                      * You may want to add some piece of code here, to format your data as a JSON for better interoperability with other modules
                      */
-                    Console.WriteLine(Encoding.ASCII.GetString(receiveBytes, 0, receiveBytes.Length));
+                    Console.WriteLine(Encoding.UTF8.GetString(receiveBytes, 0, receiveBytes.Length));
 
                     _udpClient.Send(receiveBytes, receiveBytes.Length, RemoteIpEndPoint);
                     //Writing the UDP payload to "output1" of the module
+                    Message msg = new Message(receiveBytes);
+                    msg.ContentType = "application/JSON";
                     //ioTHubModuleClient.SendEventAsync("output1", new Message(receiveBytes));
-                    ioTHubModuleClient.SendEventAsync("output1", new Message(receiveBytes));
+                    ioTHubModuleClient.SendEventAsync("output1", msg);
 
                 }
                 catch (Exception ex)
