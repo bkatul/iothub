@@ -113,7 +113,7 @@ namespace IotEdgeUdpModule
                      * You may want to add some piece of code here, to format your data as a JSON for better interoperability with other modules
                      */
                     Console.WriteLine(Encoding.UTF8.GetString(receiveBytes, 0, receiveBytes.Length));
-
+                    //acknoledgement to device
                     _udpClient.Send(receiveBytes, receiveBytes.Length, RemoteIpEndPoint);
                     //Writing the UDP payload to "output1" of the module
                     Message msg = new Message(receiveBytes);
